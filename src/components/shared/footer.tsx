@@ -1,5 +1,9 @@
-import {Container} from "@/components/shared/container";
+import Link from "next/link";
+
 import FeatherIcon from "feather-icons-react";
+
+import {Container} from "@/components/shared/container";
+import {base, withBase} from "../../../lib/path";
 
 const footerNavigation = [
     {
@@ -31,9 +35,9 @@ export function Footer() {
                 <ul className="flex items-center justify-evenly h-16">
                     {footerNavigation.map((item, index) => (
                         <li key={index} className="flex items-center justify-between">
-                            <a href={item.slug} aria-label={item.name}>
+                            <Link href={withBase(item.slug)} aria-label={item.name}>
                                 <FeatherIcon icon={item.icon} size={32} color={"white"} />
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

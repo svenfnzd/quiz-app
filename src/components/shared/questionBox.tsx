@@ -4,6 +4,7 @@ import {useState} from "react";
 import Image from "next/image";
 
 import {Bookmark} from "feather-icons-react";
+import {withBase} from "../../../lib/path";
 
 export function QuestionBox(question: any) {
     const [showAnswer, setShowAnswer] = useState(false);
@@ -31,11 +32,12 @@ export function QuestionBox(question: any) {
                 <div className="flex aspect-video overflow-hidden rounded-xl">
                     <Image
                         className="w-full h-full object-cover object-center"
-                        src={question.questions.image}
+                        src={withBase(question.questions.image)}
                         alt={question.questions.question}
                         width={600}
                         height={400}
                         loading="eager"
+                        unoptimized
                     />
                 </div>
 

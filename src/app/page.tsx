@@ -10,17 +10,17 @@ const questions = [
     {
         question: "Wie alt wurde Bob Marley?",
         answer: "Bob Marley wurde 36 Jahre alt",
-        image: "/bob_marley.png",
+        image: "/quiz-app/bob_marley.png",
     },
     {
         question: "Wie heißt die Freundin von John Lennon?",
         answer: "John Lennons Lebensgefährtin heißt Yoko Ono",
-        image: "/beatles.png",
+        image: "/quiz-app/beatles.png",
     },
     {
         question: "Wie hieß die Popgruppe der ersten Staffel von Popstars?",
         answer: "Die erste Popstars Popgruppe hieß No Angels",
-        image: "/popstars.png",
+        image: "/quiz-app/popstars.png",
     },
 ]
 

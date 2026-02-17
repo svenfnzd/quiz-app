@@ -5,7 +5,7 @@ const questions = [
     {
         question: "Wie viele Grammys gewann die Band Queen zu ihren Lebzeiten?",
         answer: "Offiziell gewann die Band Queen 0 Grammys",
-        image: "/queen.png",
+        image: "/quiz-app/queen.png",
     },
     {
         question: "Wie alt wurde Bob Marley?",
